@@ -1,4 +1,5 @@
 FROM python
-WORKDIR /sumP
+WORKDIR /pythonProjects/randomCatFact
 COPY . .
-CMD [ "python","myapp.py" ]
+RUN  pip install requests
+CMD [ "python","api_demo.py" ]
